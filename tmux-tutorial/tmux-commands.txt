@@ -1,0 +1,16 @@
+What is Tmux?
+Tmux stands for terminal multiplexer. If you use remote server for your work and the task need a long time.
+Then you should definitely use it. 
+
+For what purpose do i need tmux?
+Well, Sometimes my task run for a long time and It is not guaranteed that my personal pc will turn on continuously until the task is complete.
+Hence to make task run on server without worrying about my ssh connection to the remote server tmux is used.
+
+How do i start a session with tmux?
+{tmux new -s amitsession}
+
+How do i reconnect to previous session?
+First get the list of all session running by tmux {tmux list-sessions}
+// let say it print amitsession
+Then for attaching to a running session {tmux attach -t amitsession}
+
